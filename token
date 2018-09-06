@@ -1,0 +1,19 @@
+import java.util.StringTokenizer;
+
+
+public class Token1 {
+	public static void main(String[] args){
+		StringTokenizer st = new StringTokenizer("this is a test \"savings=242.50\" \"accountbsb=98989\" accountbsb=null savings=null");
+	     while (st.hasMoreTokens()) {
+	    	 String curString = new String(st.nextToken());
+	    	 
+	    	 
+	    	 if(curString.contains("savings")||curString.contains("accountbsb")){
+	    		 System.out.println(curString);
+	    	 }
+	         
+	     }
+	 
+	}
+
+}
